@@ -11,7 +11,7 @@ class AuctionItem:
         if bid_amount >= self.start_price and bid_amount > self.highest_bid:
             self.highest_bidder = bidder
             self.highest_bid = bid_amount
-```
+````
 
 Here, we define the `AuctionItem` class, which represents an item in the auction. It has the following attributes:
 - `name`: The name of the item.

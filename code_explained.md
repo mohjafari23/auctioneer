@@ -1,5 +1,4 @@
-````
-python
+````python
 class AuctionItem:
     def __init__(self, name, picture, start_price):
         self.name = name
@@ -27,8 +26,7 @@ The `update_bid` method is used to update the highest bidder and bid amount for 
 
 The method first checks if the bid amount is greater than or equal to the starting price (`bid_amount >= self.start_price`). It ensures that the bid is acceptable and meets or exceeds the minimum required bid. If the bid is valid, it then checks if the bid amount is greater than the current highest bid (`bid_amount > self.highest_bid`). If it is, the `highest_bidder` and `highest_bid` attributes are updated with the new bidder and bid amount.
 
-```
-python
+```python
 def auctioneer(items):
     print("Welcome to the Auctioneer Program!")
     print("-------------------------------")
@@ -46,8 +44,7 @@ The `auctioneer` function handles the auction process. It takes a list of `Aucti
 
 At the beginning, it initializes an empty dictionary, `bidders`, to keep track of the bidders for each item. The keys of the dictionary are the item names, and the values are empty lists. This dictionary will be used to ensure that a bidder can bid on an item only once.
 
-```
-python
+```python
     while True:
         print("\nAvailable items for bidding:")
         for item in items:
@@ -93,8 +90,7 @@ If the item name is valid, the program prompts the user to enter their name and 
 
 If all the checks pass, the bidder's name is added to the list of bidders for the selected item (`bidders[item_name].append(bidder_name)`), and the `update_bid` method is called on the corresponding `AuctionItem` object to update the highest bidder and bid amount.
 
-```
-python
+```python
     print("\nAuction Results:")
     for item in items:
         print(f"\nItem: {item.name}")
